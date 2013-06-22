@@ -1,0 +1,21 @@
+// General nav styles
+nav {
+
+   ul { list-style-type: none; }
+   a { text-decoration: none; }
+}
+
+// Main site nav
+.nav-main {
+   background: $color-charcoal;
+   padding: 1em 0;
+   width: 100%;
+
+   li {
+      float: left;
+   }
+   
+   a {
+      color: #fff;
+   }
+}
