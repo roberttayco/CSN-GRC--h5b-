@@ -55,7 +55,7 @@ if (function_exists('add_theme_support'))
     add_theme_support('automatic-feed-links');
 
     // Localisation Support
-    load_theme_textdomain('html5blank', get_template_directory() . '/languages');
+    load_theme_textdomain('csn-grc-h5b', get_template_directory() . '/languages');
 }
 
 /*------------------------------------*\
@@ -122,8 +122,8 @@ function html5blank_styles()
  // wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
  // wp_enqueue_style('normalize'); // Enqueue it!
     
-    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-    wp_enqueue_style('html5blank'); // Enqueue it!
+    wp_register_style('csn-grc-h5b', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    wp_enqueue_style('csn-grc-h5b'); // Enqueue it!
 
     // Register & Enqueue Google web fonts
     wp_register_style('googlefont', 'http://fonts.googleapis.com/css?family=Lato:300,400,700|Noto+Serif:400,400italic', array());
@@ -134,9 +134,9 @@ function html5blank_styles()
 function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
-        'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+        'header-menu' => __('Header Menu', 'csn-grc-h5b'), // Main Navigation
+        'sidebar-menu' => __('Sidebar Menu', 'csn-grc-h5b'), // Sidebar Navigation
+        'extra-menu' => __('Extra Menu', 'csn-grc-h5b') // Extra Navigation if needed (duplicate as many as you need!)
     ));
 }
 
@@ -182,8 +182,8 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 1', 'csn-grc-h5b'),
+        'description' => __('Description for this widget-area...', 'csn-grc-h5b'),
         'id' => 'widget-area-1',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -193,8 +193,8 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 2
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 2', 'csn-grc-h5b'),
+        'description' => __('Description for this widget-area...', 'csn-grc-h5b'),
         'id' => 'widget-area-2',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -259,7 +259,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'csn-grc-h5b') . '</a>';
 }
 
 // Remove Admin bar
@@ -412,18 +412,18 @@ function create_post_type_html5()
     register_post_type('html5-blank', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'name' => __('HTML5 Blank Custom Post', 'csn-grc-h5b'), // Rename these to suit
+            'singular_name' => __('HTML5 Blank Custom Post', 'csn-grc-h5b'),
+            'add_new' => __('Add New', 'csn-grc-h5b'),
+            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'csn-grc-h5b'),
+            'edit' => __('Edit', 'csn-grc-h5b'),
+            'edit_item' => __('Edit HTML5 Blank Custom Post', 'csn-grc-h5b'),
+            'new_item' => __('New HTML5 Blank Custom Post', 'csn-grc-h5b'),
+            'view' => __('View HTML5 Blank Custom Post', 'csn-grc-h5b'),
+            'view_item' => __('View HTML5 Blank Custom Post', 'csn-grc-h5b'),
+            'search_items' => __('Search HTML5 Blank Custom Post', 'csn-grc-h5b'),
+            'not_found' => __('No HTML5 Blank Custom Posts found', 'csn-grc-h5b'),
+            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'csn-grc-h5b')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
