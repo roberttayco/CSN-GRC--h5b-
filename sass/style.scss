@@ -1,0 +1,21 @@
+/*
+Theme Name:     CSN GRC
+Theme URI:      sites.csn.edu/cg
+Description:    CSN GRC theme
+Template:       html5blank
+Version:        1
+*/
+
+@import "config";
+@import "normalize";
+// @import "compass/reset";
+
+
+body {
+   background: red;
+   color: blue;
+   // font-family: $font-copy;
+   font-family: sans-serif;
+   font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6 { font-family: 'helvetica neue'; }
