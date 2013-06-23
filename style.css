@@ -183,59 +183,96 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 13, sass/style.scss */
+/* line 2, sass/_typography.scss */
 body {
-  font-family: sans-serif;
-  font-size: 16px; }
+  font-family: "noto serif", serif;
+  font-size: 1em;
+  line-height: 1.5; }
 
-/* line 20, sass/style.scss */
+/* line 8, sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'helvetica neue'; }
+  font-family: "lato", sans-serif; }
+
+/* line 11, sass/_typography.scss */
+h1, h2 {
+  font-weight: 200; }
+
+/* line 14, sass/_typography.scss */
+h3, h4 {
+  font-weight: 400; }
+
+/* line 17, sass/_typography.scss */
+h5, h6 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+/* line 22, sass/_typography.scss */
+h1 {
+  font-size: 2.5em; }
+
+/* line 23, sass/_typography.scss */
+h2 {
+  font-size: 2.2em; }
+
+/* line 24, sass/_typography.scss */
+h3 {
+  font-size: 1.85em; }
+
+/* line 25, sass/_typography.scss */
+h4 {
+  font-size: 1.25em; }
+
+/* line 26, sass/_typography.scss */
+h5 {
+  font-size: 1em; }
+
+/* line 27, sass/_typography.scss */
+h6 {
+  font-size: .85em; }
+
+/* line 29, sass/_typography.scss */
+p {
+  margin-bottom: 1.75em; }
 
 /* line 4, sass/modules/_nav.scss */
 nav ul {
-  list-style-type: none; }
-/* line 5, sass/modules/_nav.scss */
+  list-style-type: none;
+  margin: 0; }
+/* line 8, sass/modules/_nav.scss */
 nav a {
   text-decoration: none; }
 
-/* line 9, sass/modules/_nav.scss */
+/* line 12, sass/modules/_nav.scss */
 .nav-main {
   background: #222222;
+  font-family: "lato", sans-serif;
+  font-size: .8em;
   padding: 1em 0;
-  width: 100%; }
-  /* line 14, sass/modules/_nav.scss */
+  width: 100%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase; }
+  /* line 21, sass/modules/_nav.scss */
   .nav-main li {
-    float: left; }
-  /* line 18, sass/modules/_nav.scss */
+    float: left;
+    margin-right: 2em; }
+  /* line 26, sass/modules/_nav.scss */
   .nav-main a {
     color: #fff; }
 
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-/* line 12, sass/_utility.scss */
-.cf:before,
-.cf:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
+/* line 1, sass/modules/_footer.scss */
+footer {
+  background: #658daa;
+  margin: 0;
+  padding: 1em 0; }
 
-/* line 17, sass/_utility.scss */
-.cf:after {
-  clear: both; }
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-/* line 25, sass/_utility.scss */
+/* line 11, sass/_utility.scss */
 .cf {
   *zoom: 1; }
+  /* line 12, sass/_utility.scss */
+  .cf:before, .cf:after {
+    content: " ";
+    display: table; }
+  /* line 16, sass/_utility.scss */
+  .cf:after {
+    clear: both; }

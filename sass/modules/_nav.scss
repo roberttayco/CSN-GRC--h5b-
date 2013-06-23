@@ -1,20 +1,28 @@
 // General nav styles
 nav {
 
-   ul { list-style-type: none; }
+   ul {
+      list-style-type: none;
+      margin: 0;
+   }
    a { text-decoration: none; }
 }
 
 // Main site nav
 .nav-main {
    background: $color-charcoal;
+   font-family: $font-headings;
+   font-size: .8em;
    padding: 1em 0;
    width: 100%;
 
+   @include menu-text;
+
    li {
       float: left;
+      margin-right: 2em;
    }
-   
+
    a {
       color: #fff;
    }
